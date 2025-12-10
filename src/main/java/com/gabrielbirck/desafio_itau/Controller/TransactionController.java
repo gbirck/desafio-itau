@@ -16,7 +16,7 @@ import java.time.OffsetDateTime;
 public class TransactionController {
 
     @Autowired
-    private TransactionService transactionService;
+    TransactionService transactionService;
 
     @PostMapping
     public ResponseEntity<Void> createTransaction(@Valid @RequestBody TransactionRequest transaction) {
